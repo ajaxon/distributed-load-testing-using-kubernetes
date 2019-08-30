@@ -43,7 +43,7 @@ class MetricsTaskSet(TaskSet):
         
 
     def on_start(self):
-        url = 'http://localhost:3000/connect'
+        url = 'http://stream.moneyball.com/connect'
         start_at = time.time()
         response = self.with_requests(url)  # or with_requests(url)
         client = sseclient.SSEClient(response)
